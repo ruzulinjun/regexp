@@ -66,7 +66,6 @@ package regexp
 
 import (
 	"bytes"
-	"fmt"
 	"hello/regexp/syntax"
 	"io"
 	"strconv"
@@ -168,7 +167,7 @@ func (re *Regexp) Longest() {
 
 func compile(expr string, mode syntax.Flags, longest bool) (*Regexp, error) {
 	re, err := syntax.Parse(expr, mode)
-	fmt.Printf("re: %+v\n", *re)
+	//fmt.Printf("re: %+v\n", *re)
 	if err != nil {
 		return nil, err
 	}
