@@ -8,7 +8,7 @@ Serve embedded files from [golang/go/src/regexp](https://github.com/golang/go/tr
 
 Install with
 
-    $ go get github.com/ruzulinjun/regexp/...
+    $ go get github.com/ruzulinjun/regexp
 
 ### Provide possession quantifier
 
@@ -19,7 +19,7 @@ use
     func BenchmarkMain(b \*testing.B) {
     	re := regexp.MustCompile("^[^可爱]*爱爱|^[^不怕]*约")
     	for i := 0; i < b.N; i++ {
-    		re.FindString("可可爱爱，是一个正常的词语，这句话不应该被检测到。")
+    		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
     	}
     }
 
@@ -32,7 +32,7 @@ use
     func BenchmarkMain(b \*testing.B) {
     	re := regexp.MustCompile("^[^可爱]*+爱爱|^[^不怕]*+约")
     	for i := 0; i < b.N; i++ {
-    		re.FindString("可可爱爱，是一个正常的词语，这句话不应该被检测到。")
+    		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
     	}
     }
 
