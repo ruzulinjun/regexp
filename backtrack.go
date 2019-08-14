@@ -15,7 +15,7 @@
 package regexp
 
 import (
-	"ruzulinjun/regexp/syntax"
+	"github.com/ruzulinjun/regexp/syntax"
 	"strings"
 	"sync"
 )

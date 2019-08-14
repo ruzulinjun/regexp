@@ -6,7 +6,7 @@ package regexp
 
 import (
 	"reflect"
-	"ruzulinjun/regexp/syntax"
+	"github.com/ruzulinjun/regexp/syntax"
 	"strings"
 	"testing"
 	"unicode/utf8"

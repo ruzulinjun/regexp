@@ -12,7 +12,7 @@ import (
 	"io"
 	"os"
 	"path/filepath"
-	"ruzulinjun/regexp/syntax"
+	"github.com/ruzulinjun/regexp/syntax"
 	"strconv"
 	"strings"
 	"testing"
