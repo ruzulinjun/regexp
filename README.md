@@ -17,7 +17,7 @@ Golang package regexp dose not provide possession quantifier.
 use
 
     func BenchmarkMain(b \*testing.B) {
-    	re := regexp.MustCompile("^[^可爱]*爱爱|^[^不怕]*约")
+    	re := regexp.MustCompile("^[^可爱]*爱爱|^[^不怕约]*约")
     	for i := 0; i < b.N; i++ {
     		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
     	}
@@ -30,7 +30,7 @@ This package provides star and plus possession quantifier.
 use 
 
     func BenchmarkMain(b \*testing.B) {
-    	re := regexp.MustCompile("^[^可爱]*+爱爱|^[^不怕]*+约")
+    	re := regexp.MustCompile("^[^可爱]*+爱爱|^[^不怕约]*+约")
     	for i := 0; i < b.N; i++ {
     		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
     	}
