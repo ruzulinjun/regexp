@@ -21,15 +21,17 @@ Based on this scenes, this package optimizes performance.
 
 use
 
-     re := regexp.MustCompile(`[^可]+爱`)
-     begin := time.Now()
-     for i := 0; i <= 1000000; i++ {
-         re.FindString(`这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。`)
-     }
-     fmt.Println(time.Since(begin))
+`
+func BenchmarkMain(b *testing.B) {
+	re := regexp.MustCompile("[^可]+爱")
+	for i := 0; i < b.N; i++ {
+		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
+	}
+}
+`
 
-golang package regexp uses 3.941630471s.
-ruzulinjun/regexp uses 175.001135ms.
+golang package regexp uses: BenchmarkMain-4   	  500000	      3997 ns/op
+ruzulinjun/regexp uses: BenchmarkMain-4   	10000000	       176 ns/op 
 Performance improves 95.6%.
 
 ### the use of this package is the same as golang package regexp
