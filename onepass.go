@@ -5,7 +5,7 @@
 package regexp
 
 import (
-	"hello/regexp/syntax"
+	"ruzulinjun/regexp/syntax"
 	"sort"
 	"strings"
 	"unicode"
