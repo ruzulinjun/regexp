@@ -23,7 +23,7 @@ use
     	}
     }
 
-use golang package regexp: BenchmarkMain-4   	  200000	     11928 ns/op
+use golang package regexp: BenchmarkMain-4   	  200000	     11675 ns/op
 
 This package provides star and plus possession quantifier.
 
@@ -36,9 +36,9 @@ use
     	}
     }
 
-use ruzulinjun/regexp: BenchmarkMain-4   	200000	     10205 ns/op
+use ruzulinjun/regexp: BenchmarkMain-4   	200000	      9430 ns/op
 
-Performance improves 14.4%.
+Performance improves 19.2%.
 
 ### For scenes using Chinese, Optimize performance
 English has only 26 letters, while Chinese has thousands daily characters.
