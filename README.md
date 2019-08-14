@@ -1,6 +1,6 @@
 # regexp
 
-Serve embedded files from [golang/go/src/regexp](https://github.com/golang/go/src/regexp).
+Serve embedded files from [golang/go/src/regexp](https://github.com/golang/go/tree/master/src/regexp).
 
 [GoDoc](http://godoc.org/github.com/ruzulinjun/regexp)
 
@@ -28,8 +28,8 @@ use
      }
      fmt.Println(time.Since(begin))
 
-golang/go/src/regexp uses 3.941630471s.
+golang package regexp uses 3.941630471s.
 ruzulinjun/regexp uses 175.001135ms.
 Performance improves 95.6%.
 
-### the use of this package is same as golang/go/src/regexp
+### the use of this package is the same as golang package regexp
