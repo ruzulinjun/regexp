@@ -15,6 +15,7 @@ Install with
 Golang package regexp dose not provide possession quantifier.
 
 use
+
     func BenchmarkMain(b \*testing.B) {
     	re := regexp.MustCompile("^[^可爱]*爱爱|^[^不怕]*约")
     	for i := 0; i < b.N; i++ {
@@ -27,6 +28,7 @@ use golang package regexp: BenchmarkMain-4   	  200000	     11928 ns/op
 This package provides star and plus possession quantifier.
 
 use 
+
     func BenchmarkMain(b \*testing.B) {
     	re := regexp.MustCompile("^[^可爱]*+爱爱|^[^不怕]*+约")
     	for i := 0; i < b.N; i++ {
@@ -44,6 +46,7 @@ English has only 26 letters, while Chinese has thousands daily characters.
 Based on this scenes, this package optimizes performance.
 
 use
+
     func BenchmarkMain(b \*testing.B) {
     	re := regexp.MustCompile("^[^可]*爱爱")
     	for i := 0; i < b.N; i++ {
