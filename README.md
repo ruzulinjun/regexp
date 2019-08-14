@@ -23,12 +23,12 @@ Based on this scenes, this package optimizes performance.
 
 use
 
-func BenchmarkMain(b \*testing.B) {
-	re := regexp.MustCompile("[^可]+爱")
-	for i := 0; i < b.N; i++ {
-		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
-	}
-}
+    func BenchmarkMain(b \*testing.B) {
+    	re := regexp.MustCompile("[^可]+爱")
+    	for i := 0; i < b.N; i++ {
+    		re.FindString("这篇文档中，我使用这句话用来测试正则匹配的效率，查看性能提升情况。")
+    	}
+    }
 
 golang package regexp uses: BenchmarkMain-4   	  500000	      3997 ns/op
 
