@@ -15,9 +15,10 @@
 package regexp
 
 import (
-	"github.com/ruzulinjun/regexp/syntax"
 	"strings"
 	"sync"
+
+	"github.com/ruzulinjun/regexp/syntax"
 )
 
 // A job is an entry on the backtracker's job stack. It holds
@@ -338,7 +339,7 @@ func (re *Regexp) backtrack(ib []byte, is string, pos int, ncap int, dstCap []in
 		return nil
 	}
 	for _, word := range re.matchRunes {
-		if !strings.ContainsRune(is, word) {
+		if is != "" && !strings.ContainsRune(is, word) {
 			return nil
 		}
 	}

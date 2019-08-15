@@ -6,7 +6,8 @@ package regexp_test
 
 import (
 	"fmt"
-	"regexp"
+
+	"github.com/ruzulinjun/regexp"
 )
 
 func Example() {
