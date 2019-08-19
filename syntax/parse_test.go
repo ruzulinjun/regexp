@@ -497,7 +497,7 @@ var onlyPerl = []string{
 }
 
 var onlyPOSIX = []string{
-	"a++",
+	//"a++",
 	"a**",
 	"a?*",
 	"a+*",
